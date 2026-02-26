@@ -1,4 +1,5 @@
 /* ===== Reset ===== */
+html { scroll-behavior: smooth; }
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
 img { max-width: 100%; display: block; }
@@ -283,4 +284,14 @@ h3{
 @media (max-width: 720px){
   .hero__name{ font-size: 28px; }
   .projects{ grid-template-columns: 1fr; }
+}
+
+/* Animación suave de entrada */
+.hero__content, .card {
+  animation: fadeUp 500ms ease both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
