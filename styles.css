@@ -52,11 +52,11 @@ body{
   align-items: center;
   flex-wrap: wrap;
 
-  background: rgba(255,255,255,0.06);
-  border: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(239,68,68,0.25), rgba(255,255,255,0.05));
+  border: 1px solid rgba(239,68,68,0.35);
   border-radius: 22px;
   padding: 22px;
-  box-shadow: var(--shadow);
+  box-shadow: 0 18px 50px rgba(239,68,68,0.25);
   backdrop-filter: blur(12px);
 }
 
@@ -168,9 +168,11 @@ body{
 #proyectos::before{ background: linear-gradient(90deg, var(--accent-project), rgba(167,139,250,0.2)); }
 
 #contacto{
-  background: linear-gradient(180deg, rgba(245,158,11,0.18), rgba(255,255,255,0.05));
+  background: linear-gradient(180deg, rgba(236,72,153,0.18), rgba(255,255,255,0.05));
 }
-#contacto::before{ background: linear-gradient(90deg, var(--accent-contact), rgba(245,158,11,0.2)); }
+#contacto::before{
+  background: linear-gradient(90deg, #ec4899, rgba(236,72,153,0.3));
+}
 
 h2{
   margin: 0 0 10px;
